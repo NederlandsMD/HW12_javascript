@@ -13,13 +13,13 @@
     background: blue;
   }
   .dropmenu {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 
   .table_filt {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   </style>
 </head>
@@ -40,112 +40,90 @@
       <p>The Truth is Out There</p>
     </div>
 
-
     <div class="container">
       <div class="row margin-top-50">
         <div class="col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading"><center>Filter Search</center></div>
-                <div class="panel-body">
-                  <div class="container=fluid">
-                            <ul class="nav navbar-nav"> 
-                                <li class="dropmenu">
-                                  <center><h5>State</h5></center>
-                                  <select id ="list_select_date">
-                                    <option value="all">All Dates</option>
-                                    <option value="1/1/2010">Jan 1, 2010</option>
-                                    <option value="1/2/2010">Jan 2, 2010</option>
-                                    <option value="1/3/2010">Jan 3, 2010</option>
-                                  </select>
-                                </li>
-                                <li class="dropmenu">
-                                  <center><h5>State</h5></center>
-                                  <select id ="list_select_city">
-                                    <option value="all">All Cities</option>
-                                    <option value="omaha">omaha</option>
-                                    <option value="houston">houston</option>
-                                    <option value="dallas">dallas</option>
-                                  </select>
-                                  </li>
-                                <li class="dropmenu">
-                                  <center><h5>State</h5></center>
-                                  <select id ="list_select_state">
-                                    <option value="all">All States</option>
-                                    <option value="tx">TX</option>
-                                    <option value="ny">NY</option>
-                                    <option value="oh">OH</option>
-                                  </select>
-                                </li>
-                                <li class="dropmenu">
-                                  <center><h5>Country</h5></center>
-                                  <select id ="list_select_country">
-                                    <option value="all">All Countries</option>
-                                    <option value="us">United States</option>
-                                    <option value="ca">Canada</option>
-                                </select>
-                              </li>
-                              <li class="dropmenu">
-                                <center><h5>Shape</h5></center>
-                                <select id ="list_select_shape">
-                                    <option value="all">All Shapes</option>
-                                    <option value="unknown">Unknown</option>
-                                    <option value="chevron">Chevron</option>
-                                    <option value="light">Light Flash</option>
-                                </select>
-                              </li>
-                            </ul>
-                          </div>
-                       </div>
-                      </div>
-                    </div>
-                  </div>
-                  <center>
-                    <button id="filter-btn2" type="submit" class="btn btn-default blues">Filter Table</button>
-                    <a href="index.html" class="btn btn-default">Go to Search Page</a>
-                  </center>
-                </form>
-              </div>
-            </div>
-          </aside>
-        </div>
-        </div>
-      <div class = "row">
-          <div class="col-md-12">
-              <div class="filter_criteria2">
-                <h4></h4>
-              </div>
-            </div>
-            <br><br>
-            <div class="col-md-12">
-                  <div id="table-area" class="">
-                    <table id="ufo-table" class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th class="table-head">Date</th>
-                          <th class="table-head">City</th>
-                          <th class="table-head">State</th>
-                          <th class="table-head">Country</th>
-                          <th class="table-head">Shape</th>
-                          <th class="table-head">Duration</th>
-                          <th class="table-head">Comments</th>
-                        </tr>
-                      </thead>
-                      <tbody></tbody>
-                    </table>
-                  </div>
+          <div class="panel panel-default">
+            <div class="panel-heading"><center>Filter Search</center></div>
+              <div class="panel-body">
+                <div class="container=fluid">
+                  <ul class="nav navbar-nav"> 
+                    <li class="dropmenu">
+                      <center><h5>Date</h5></center>
+                      <select id ="list_select_date">
+                        <option value="all">All Dates</option>
+                      </select>
+                    </li>
+                    <li class="dropmenu">
+                      <center><h5>City</h5></center>
+                      <select id ="list_select_city">
+                        <option value="all">All Cities</option>
+                      </select>
+                    </li>
+                    <li class="dropmenu">
+                      <center><h5>State</h5></center>
+                      <select id ="list_select_state">
+                        <option value="all">All States</option>
+                      </select>
+                    </li>
+                    <li class="dropmenu">
+                      <center><h5>Country</h5></center>
+                      <select id ="list_select_country">
+                        <option value="all">All Countries</option>
+                      </select>
+                    </li>
+                    <li class="dropmenu">
+                      <center><h5>Shape</h5></center>
+                      <select id ="list_select_shape">
+                        <option value="all">All Shapes</option>
+                      </select>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              
             </div>
-            
           </div>
-        
         </div>
-        <!--<footer class="footer">
-            <span class="bottom">UFO Sightings</span>
-          </footer> 1-->
-      </div>  
-      
+        <center>
+          <button id="filter-btn2" type="submit" class="btn btn-default blues">Filter Table</button>
+          <a href="index.html" class="btn btn-default">Go to Search Page</a>
+          <a href="filterpage.html" class="btn btn-default">Reset Filters</a>
+        </center>
+        <br><br>
+      <div class = "row">
+        <div class="col-md-12">
+          <div class="filter_criteria2">
+            <h4></h4>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class = "row">
+        <div class="col-md-12">
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="table-head">Date</th>
+                  <th class="table-head">City</th>
+                  <th class="table-head">State</th>
+                  <th class="table-head">Country</th>
+                  <th class="table-head">Shape</th>
+                  <th class="table-head">Duration</th>
+                  <th class="table-head">Comments</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div> <!--Container-->
+    <footer class="footer">
+      <span class="bottom">UFO Sightings</span>
+    </footer>
+  </div>  <!--Wrapper-->
+       
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
   <script src="static/js/data.js"></script>
   <script src="static/js/app.js"></script>
