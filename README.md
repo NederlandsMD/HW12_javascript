@@ -1,8 +1,8 @@
 # Javascript: Filtering through a database of UFO sightings
 
-Main file: /static/js/app.js
-Data file: /static/js/data.js
-HTML: index.html, filterpage.html
+Main file: /static/js/app.js                  
+Data file: /static/js/data.js                   
+HTML: index.html, filterpage.html                 
 
 How to run: start a local server using python -m https.server, then navigate to local host.
 
